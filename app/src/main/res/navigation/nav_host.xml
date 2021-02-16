@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.baharudin.photoshopapp.fragment.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_pengenalanFragment"
+            app:destination="@id/pengenalanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pengenalanFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.PengenalanFragment"
+        android:label="fragment_pengenalan"
+        tools:layout="@layout/fragment_pengenalan" >
+        <action
+            android:id="@+id/action_pengenalanFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>
