@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".fragment.materi.PengenalanFragment">
-
+    tools:context=".fragment.materi.AcneFragment">
 
     <TextView
         android:id="@+id/textView3"
@@ -15,8 +14,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/reguler"
-        android:text="Pengenalan Photoshop"
-        android:gravity="center"
+        android:text="@string/menghilagkan_jerawat"
         android:textColor="@color/black"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"

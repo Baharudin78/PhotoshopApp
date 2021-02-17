@@ -13,6 +13,33 @@
         <action
             android:id="@+id/action_menuFragment_to_pengenalanFragment"
             app:destination="@id/pengenalanFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_acneFragment"
+            app:destination="@id/acneFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_blurBackgroundFragment"
+            app:destination="@id/blurBackgroundFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_botolFragment"
+            app:destination="@id/botolFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_doubleExposureFragment"
+            app:destination="@id/doubleExposureFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_faceCleanFragment"
+            app:destination="@id/faceCleanFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_hairSelectionFragment"
+            app:destination="@id/hairSelectionFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_tampilanFragment"
+            app:destination="@id/tampilanFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_textEffectFragment"
+            app:destination="@id/textEffectFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_toolsBoxFragment"
+            app:destination="@id/toolsBoxFragment" />
     </fragment>
     <fragment
         android:id="@+id/pengenalanFragment"
@@ -21,6 +48,87 @@
         tools:layout="@layout/fragment_pengenalan" >
         <action
             android:id="@+id/action_pengenalanFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acneFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.AcneFragment"
+        android:label="fragment_acne"
+        tools:layout="@layout/fragment_acne" >
+        <action
+            android:id="@+id/action_acneFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blurBackgroundFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.BlurBackgroundFragment"
+        android:label="fragment_blur_background"
+        tools:layout="@layout/fragment_blur_background" >
+        <action
+            android:id="@+id/action_blurBackgroundFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/botolFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.BotolFragment"
+        android:label="fragment_botol"
+        tools:layout="@layout/fragment_botol" >
+        <action
+            android:id="@+id/action_botolFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doubleExposureFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.DoubleExposureFragment"
+        android:label="fragment_double_exposure"
+        tools:layout="@layout/fragment_double_exposure" >
+        <action
+            android:id="@+id/action_doubleExposureFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/faceCleanFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.FaceCleanFragment"
+        android:label="fragment_face_clean"
+        tools:layout="@layout/fragment_face_clean" >
+        <action
+            android:id="@+id/action_faceCleanFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hairSelectionFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.HairSelectionFragment"
+        android:label="fragment_hair_selection"
+        tools:layout="@layout/fragment_hair_selection" >
+        <action
+            android:id="@+id/action_hairSelectionFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tampilanFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.TampilanFragment"
+        android:label="fragment_tampilan"
+        tools:layout="@layout/fragment_tampilan" >
+        <action
+            android:id="@+id/action_tampilanFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/textEffectFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.TextEffectFragment"
+        android:label="fragment_text_effect"
+        tools:layout="@layout/fragment_text_effect" >
+        <action
+            android:id="@+id/action_textEffectFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toolsBoxFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.ToolsBoxFragment"
+        android:label="fragment_tools_box"
+        tools:layout="@layout/fragment_tools_box" >
+        <action
+            android:id="@+id/action_toolsBoxFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
     </fragment>
 </navigation>
