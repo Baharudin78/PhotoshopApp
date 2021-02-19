@@ -47,5 +47,12 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
             findNavController().navigate(R.id.action_menuFragment_to_textEffectFragment)
         }
 
+        binding.gotoManipulasi.setOnClickListener {
+            findNavController().navigate(R.id.action_menuFragment_to_manipulasiFragment)
+        }
+        binding.gotoWaterColor.setOnClickListener {
+            findNavController().navigate(R.id.action_menuFragment_to_waterColorFragment)
+        }
+
     }
 }

@@ -14,5 +14,7 @@ class BotolFragment : Fragment(R.layout.fragment_botol) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         _binding = FragmentBotolBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
+
+        binding.pdfView.fromAsset("botol.pdf").load()
     }
 }

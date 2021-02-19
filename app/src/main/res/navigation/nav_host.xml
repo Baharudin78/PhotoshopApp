@@ -40,6 +40,12 @@
         <action
             android:id="@+id/action_menuFragment_to_toolsBoxFragment"
             app:destination="@id/toolsBoxFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_manipulasiFragment"
+            app:destination="@id/manipulasiFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_waterColorFragment"
+            app:destination="@id/waterColorFragment" />
     </fragment>
     <fragment
         android:id="@+id/pengenalanFragment"
@@ -131,4 +137,14 @@
             android:id="@+id/action_toolsBoxFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/manipulasiFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.ManipulasiFragment"
+        android:label="fragment_manipulasi"
+        tools:layout="@layout/fragment_manipulasi" />
+    <fragment
+        android:id="@+id/waterColorFragment"
+        android:name="com.baharudin.photoshopapp.fragment.materi.WaterColorFragment"
+        android:label="fragment_water_color"
+        tools:layout="@layout/fragment_water_color" />
 </navigation>

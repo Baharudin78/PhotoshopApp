@@ -15,5 +15,6 @@ class DoubleExposureFragment : Fragment(R.layout.fragment_double_exposure){
         _binding = FragmentDoubleExposureBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
 
+        binding.pdfView.fromAsset("doubelexposure.pdf").load()
     }
 }

@@ -15,6 +15,7 @@ class ToolsBoxFragment  : Fragment(R.layout.fragment_tools_box){
         _binding = FragmentToolsBoxBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
 
+        binding.pdfView.fromAsset("toolbox.pdf").load()
 
     }
 }

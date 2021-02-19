@@ -241,7 +241,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat"
-                        android:text="Menghaluskan \nWajah"
+                        android:text="Dispression \nEffect"
                         android:gravity="center"
                         android:textColor="@color/black"/>
 
@@ -273,14 +273,15 @@
 
             <LinearLayout
                 android:layout_marginTop="30dp"
-                android:layout_marginStart="28dp"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:weightSum="3"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/gotoDoubleExposure"
                     android:gravity="center"
+                    android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -296,6 +297,52 @@
                         android:gravity="center"
                         android:fontFamily="@font/montserrat"
                         android:text="Double Exposure"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gotoManipulasi"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_manipulator"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Manipulasi \nFoto"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gotoWaterColor"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_watercolor"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Water Color "
                         android:textColor="@color/black"/>
 
                 </LinearLayout>

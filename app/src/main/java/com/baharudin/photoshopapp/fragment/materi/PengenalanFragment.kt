@@ -15,5 +15,7 @@ class PengenalanFragment : Fragment(R.layout.fragment_pengenalan) {
         _binding = FragmentPengenalanBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
 
+        binding.pdfView.fromAsset("pengenalan.pdf").load()
+
     }
 }

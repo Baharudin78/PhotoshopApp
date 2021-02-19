@@ -15,5 +15,7 @@ class TampilanFragment : Fragment(R.layout.fragment_tampilan) {
         _binding = FragmentTampilanBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
 
+        binding.pdfView.fromAsset("tampilan.pdf").load()
+
     }
 }

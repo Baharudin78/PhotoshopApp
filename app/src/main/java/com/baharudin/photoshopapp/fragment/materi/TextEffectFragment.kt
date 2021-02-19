@@ -15,5 +15,6 @@ class TextEffectFragment : Fragment(R.layout.fragment_text_effect){
         _binding = FragmentTextEffectBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
 
+        binding.pdfView.fromAsset("texteffect.pdf").load()
     }
 }
