@@ -14,5 +14,7 @@ class BlurBackgroundFragment : Fragment (R.layout.fragment_blur_background){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         _binding = FragmentBlurBackgroundBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
+
+        binding.pdfView.fromAsset("blurback.pdf").load()
     }
 }

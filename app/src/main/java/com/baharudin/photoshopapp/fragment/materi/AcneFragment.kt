@@ -14,5 +14,7 @@ class AcneFragment : Fragment(R.layout.fragment_acne) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         _binding = FragmentAcneBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
+
+        binding.pdfView.fromAsset("jerwat.pdf").load()
     }
 }

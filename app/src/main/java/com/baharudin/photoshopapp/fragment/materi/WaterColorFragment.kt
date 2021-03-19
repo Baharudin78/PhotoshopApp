@@ -14,5 +14,7 @@ class WaterColorFragment : Fragment(R.layout.fragment_water_color) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         _binding = FragmentWaterColorBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
+
+        binding.pdfView.fromAsset("watercolor.pdf").load()
     }
 }

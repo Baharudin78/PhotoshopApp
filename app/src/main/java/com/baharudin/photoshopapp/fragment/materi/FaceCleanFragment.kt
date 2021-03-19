@@ -15,5 +15,7 @@ class FaceCleanFragment : Fragment(R.layout.fragment_face_clean) {
         _binding = FragmentFaceCleanBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
 
+        binding.pdfView.fromAsset("face.pdf").load()
+
     }
 }

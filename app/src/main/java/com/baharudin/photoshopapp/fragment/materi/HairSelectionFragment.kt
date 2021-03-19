@@ -15,5 +15,7 @@ class HairSelectionFragment : Fragment(R.layout.fragment_hair_selection) {
         _binding = FragmentHairSelectionBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
 
+        binding.pdfView.fromAsset("rambut.pdf").load()
+
     }
 }
